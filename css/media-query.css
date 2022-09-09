@@ -1,0 +1,154 @@
+/* navbar */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar__links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: var(--red-color);
+    height: 100vh;
+    width: 40%;
+    z-index: 99;
+    gap: 2rem;
+    padding: 20% 25px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: 0.5s ease;
+  }
+
+  .navbar__links.show {
+    transform: translateX(30px);
+    opacity: 1;
+  }
+
+  .hamburger__menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar__links li .links__active::before {
+    background: gold;
+  }
+
+  .hamburger__menu i {
+    font-size: 28px;
+    color: #000;
+  }
+
+  #close {
+    display: block;
+    font-size: 28px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #000;
+  }
+
+  .navbar__links li a {
+    color: #fff;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar__links {
+    width: 100%;
+    padding: 35% 25px;
+  }
+}
+
+/* hero */
+@media (max-width: 992px) {
+  .hero {
+    height: auto;
+  }
+  .hero__wrapper {
+    text-align: center;
+  }
+
+  .hero__content {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .hero__wrapper .image {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero__image {
+    padding-right: 0px;
+  }
+}
+
+/* news */
+@media (max-width: 992px) {
+  .news {
+    height: auto;
+  }
+  .news__content {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .news__info {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .news {
+  }
+  .news__image {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .news__image img {
+    max-width: 100%;
+  }
+
+  .news__info {
+  }
+
+  .news__info__2 .button {
+    margin-left: 0;
+  }
+}
+
+/* anime */
+@media (max-width: 600px) {
+  .news__info__2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+}
+
+/* footer */
+@media (max-width: 992px) {
+  .footer__wrapper {
+    overflow: hidden;
+  }
+}
+@media (max-width: 600px) {
+  .footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+/* loader */
+@media (max-width: 992px) {
+  .loader {
+    justify-content: center;
+  }
+}

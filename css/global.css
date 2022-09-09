@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Pacifico&family=Poppins:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+  font-family: var(--font-Koulen);
+}
+
+:root {
+  --dark-color--: #333;
+  --light-color--: #eee;
+  --red-color: rgb(255, 0, 76);
+  --font-Poppins--: 'Poppins', sans-serif;
+  --font-Koulen: 'Koulen', cursive;
+  --font-Pacifico: 'Pacifico', cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* layout */
+.container {
+  position: relative;
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+section {
+  margin-top: 110px;
+}
+
+.title {
+  position: relative;
+  font-size: 2rem;
+  letter-spacing: 8px;
+  padding-left: 10px;
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 40px;
+  width: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: red;
+}
+
+.title__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.title__info i {
+  display: inline-block;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  background: var(--red-color);
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
